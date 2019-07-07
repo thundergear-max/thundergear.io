@@ -1,0 +1,83 @@
+<!Doctype html>
+<html lang="en" dir="ltr">
+    <head>
+       <meta charset="utf-8">
+        <title>Business Card</title>
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <link rel="icon" href="2.jpg" type="image/png" sizes="30x30">
+        <style media="screen">
+            .loader{
+                position: fixed;
+                z-index: 99;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #2980b9;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .loader.hidden{
+              animation: fadeOut 1s;
+              animation-fill-mode: forwards;
+            }
+
+            @keyframes fadeOut{
+                100% {
+                  opacity: 0;
+                  visibility: hidden;
+                }
+
+            }
+
+            </style>
+    </head>
+        <body>
+            <div class="loader">
+                <img src="loading.gif.gif" alt="Loading..."/>
+              </div>
+              <div class="side">
+                    <a href="offical.html" style="background:#27ae60;">Home</a>
+                    <a href="social.html" style="background:#c0392b;">Social Media</a>
+                    <a href="contactus.html" style="background:#2c3e50;">Contact Us</a>
+                    <a href="newsletter.html" style="background:#2980b9;">Join Us</a>
+                </div>
+            <div class="business-card middle">
+                <div class="front">
+                    <h2>Sanay George Varghese</h2>
+                    <span>Web Designer</span>
+                    <ul class="contact-info">
+                    <li>
+                        <i class="fas fa-mobile-alt"></i>+91000000000
+                    </li>
+                    <li>
+                        <i class="far fa-envelope"></i>sanaygeorgevarghese@gmail.com
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>India, kerala
+                    </l>
+                    </ul>
+                </div>
+                <div class="back">
+                    <span>Thunder Gear</span>
+                </div>
+            </div>
+
+            <script>
+             $(".business-card").click(function(){
+                $(".business-card").toggleClass("business-card-active");
+             });
+
+            </script>
+            <script>
+                window.addEventListener("load", function() {
+                    const loader = document.querySelector(".loader");
+                    loader.className += " hidden";//class "loader hidden"
+                  });
+            </script>
+        </body>
+</html>

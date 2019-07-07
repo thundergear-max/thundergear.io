@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+#particles-js{
+    height: 100%;
+    background: black;
+}
+        .loader{
+            position: fixed;
+            z-index: 99;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #2980b9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loader.hidden{
+          animation: fadeOut 1s;
+          animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeOut{
+            100% {
+              opacity: 0;
+              visibility: hidden;
+            }
+
+        }
+        .side{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .side a{
+            background:#e74c3c;
+            color: #ecf0f1;
+            font-size: 22px;
+            display: block;
+            width: 138px;
+            padding: 12px;
+            text-decoration: none; 
+            margin: 8px 0;
+            color: #ecf0f1;
+            border-radius: 6px;
+            margin-left: -140px;
+            transition: 0.6s all;
+        } 
+        .side a:hover{
+            margin-left: 0;
+        }
+.container{
+    text-align: inherit;
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    transform: translate(-40%,-80%);
+    width: 100%;
+}
+.container span{
+    text-transform: uppercase;
+    display: block;
+}
+.text1{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background: black;
+    position: relative;
+    animation: text 5s 1;
+}
+.text2{
+      font-size: 30px;
+      color: #c6c6ce;
+}
+
+@keyframes text{
+    0%{
+        color: black;
+        margin-bottom: -40px; 
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.sm-container{
+    text-align: center;
+}
+.sm-container i{
+    color: #f5f6fa;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.sm-container i:hover{
+    transform: scale(1.2);
+}
+
+.sm-menu{
+    background: #487eb0;
+    position: center;
+    border-radius: 8px;
+    display: none;
+}
+
+.sm-menu::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #487eb0;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}

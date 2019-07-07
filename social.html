@@ -1,0 +1,52 @@
+<html lang="en" dir="ltr">
+    <head>
+       <meta charset="utf-8">
+       <title>Social Media</title>
+       <link rel="stylesheet" href="style5.css">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+       <link rel="icon" href="2.jpg" type="image/png" sizes="30x30">
+   </head>
+       <body>
+            <div class="loader">
+                    <img src="loading.gif.gif" alt="Loading..."/>
+                  </div>
+                  <div id="particles-js"></div>
+                  <div class="side">
+                        <a href="offical.html" style="background:#27ae60;">Home</a>
+                        <a href="busineescard.html" style="background:#c0392b;">Business Card</a>
+                        <a href="contactus.html" style="background:#2c3e50;">Contact Us</a>
+                        <a href="newsletter.html" style="background:#2980b9;">Join Us</a>
+                    </div>
+               <div class="container">
+                       <span class="text1">Social</span>
+                       <span class="text2">Media</span>
+                   </div>
+       <div class="middle">
+           <div class="sm-container">
+               <i class="show-btn fas fa-user"></i>
+               <div class="sm-menu">
+                   <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                   <a href="https://twitter.com/login?lang=en"><i class="fab fa-twitter"></i></a>
+                   <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fab fa-instagram"></i></a>
+                   <a href="https://www.youtube.com/watch?v=UVxU2HzPGug"><i class="fab fa-youtube"></i></a>
+                   <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+               </div>
+           </div>
+       </div>
+
+       <script>
+           $(".show-btn").click(function(){
+                   $(".sm-menu").fadeToggle("fast");
+           });
+
+           </script>
+           <script>
+             window.addEventListener("load", function() {
+                  const loader = document.querySelector(".loader");
+                  loader.className += " hidden";//class "loader hidden"
+                });
+           </script>
+            <script src="particles.js"></script>
+            <script src="app.js"></script>
+       </body></html>
